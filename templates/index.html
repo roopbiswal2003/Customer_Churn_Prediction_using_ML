@@ -32,7 +32,7 @@
             --card-bg: #2d2f3a;
             --sidebar-bg: #2d2f3a;
             --sidebar-text: #e3e6f0;
-            --about-text-color: #ffffff;  /* White color for better visibility in dark mode */
+            --about-text-color: #e3e6f0;  /* Lighter color for dark mode */
             --about-text-size: 1.05rem;
         }
 
@@ -42,10 +42,6 @@
             transition: all 0.3s ease;
             min-height: 100vh;
             display: flex;
-        }
-
-        .dark-theme-text {
-            color: var(--about-text-color) !important;
         }
 
         /* Sidebar Styles */
@@ -182,6 +178,10 @@
             box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
         }
 
+        .card{
+            background-color: var(--card-bg);
+        }
+
         .form-group {
             margin-bottom: 1.5rem;
         }
@@ -313,7 +313,7 @@
         }
 
         .profile-section {
-            background: white;
+            background-color: var(--card-bg);
             border-radius: 10px;
             padding: 25px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -326,11 +326,11 @@
             align-items: center;
             margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #f0f0f0;
+            border-bottom: 2px solid var(--card-bg);
         }
 
         .profile-header h2 {
-            color: #2c3e50;
+            color: var(--text-color);
             margin: 0;
             display: flex;
             align-items: center;
@@ -371,13 +371,13 @@
             align-items: flex-start;
             gap: 15px;
             padding: 15px;
-            background: #f8f9fa;
+            background-color: var(--card-bg);
             border-radius: 8px;
             transition: all 0.3s ease;
         }
 
         .info-item:hover {
-            background: #f0f0f0;
+            background-color: var(--card-bg);
             transform: translateX(5px);
         }
 
@@ -399,7 +399,7 @@
         }
 
         .info-content span {
-            color: #2c3e50;
+            color: var(--text-color);
             font-size: 16px;
             font-weight: 500;
         }
@@ -882,10 +882,10 @@
                         <div class="card h-100 shadow-sm p-3">
                             <img src="https://daxg39y63pxwu.cloudfront.net/images/blog/churn-models/Customer_Churn_Prediction_Models_in_Machine_Learning.png" class="card-img-top mx-auto d-block" style="width: 100%; max-width: 320px; height: 180px; object-fit: cover; border-radius: 12px;" alt="Business Analytics Graph">
                             <ul class="mt-3 ps-3" style="font-size: 1rem;">
-                                <li class="dark-theme-text">Churn prediction uses data to identify customers likely to leave.</li>
-                                <li class="dark-theme-text">Machine learning models analyze usage, demographics, and behavior.</li>
-                                <li class="dark-theme-text">Early identification enables proactive retention strategies.</li>
-                                <li class="dark-theme-text">Helps businesses focus on high-risk customers and improve experience.</li>
+                                <li>Churn prediction uses data to identify customers likely to leave.</li>
+                                <li>Machine learning models analyze usage, demographics, and behavior.</li>
+                                <li>Early identification enables proactive retention strategies.</li>
+                                <li>Helps businesses focus on high-risk customers and improve experience.</li>
                             </ul>
                         </div>
                     </div>
@@ -893,17 +893,17 @@
                         <div class="card h-100 shadow-sm p-3">
                             <img src="https://lightpointglobal.com/wp-content/uploads/2024/02/Customer-Churn-Analytics-1024x683.jpg" class="card-img-top mx-auto d-block" style="width: 100%; max-width: 320px; height: 180px; object-fit: cover; border-radius: 12px;" alt="Business Analytics Graph">
                             <ul class="mt-3 ps-3" style="font-size: 1rem;">
-                                <li class="dark-theme-text">Customer retention is more cost-effective than acquisition.</li>
-                                <li class="dark-theme-text">Effective churn prediction boosts loyalty and satisfaction.</li>
-                                <li class="dark-theme-text">Retained customers are more likely to refer others and spend more.</li>
-                                <li class="dark-theme-text">Retention strategies drive long-term business success.</li>
+                                <li>Customer retention is more cost-effective than acquisition.</li>
+                                <li>Effective churn prediction boosts loyalty and satisfaction.</li>
+                                <li>Retained customers are more likely to refer others and spend more.</li>
+                                <li>Retention strategies drive long-term business success.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-4">
                     <div class="col-md-12">
-                        <div class="card bg-light border-0 shadow-sm">
+                        <div class="card border-0 shadow-sm">
                             <div class="card-body">
                                 <h3 class="card-title mb-3 mt-4" style="color: var(--about-text-color); font-size: 1.1rem;">What is Customer Churn?</h3>
                                 <p class="card-text" style="color: var(--about-text-color); font-size: var(--about-text-size); line-height: 1.6;">Customer churn, also known as customer attrition, refers to the loss of clients or subscribers. It is a key metric for businesses, as high churn rates can indicate dissatisfaction, better offers from competitors, or a lack of engagement. Understanding why customers leave helps companies improve their products, services, and customer relationships.</p>
